@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel = "stylesheet" href = "input.css">
+    <title>Document</title>
+</head>
+<body class="text-white">
+    <nav class="py-4 px-8 flex justify-between bg-black/90">
+        <h1 class="font-sans uppercase font-extrabold text-lg hover:cursor-pointer"><span class="text-orange-500">Mercy</span>Ifediorah</h1>
+        <ul class="hidden lg:flex font-sans gap-7 text-[15px] items-center font-semibold">
+            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline">Portfolio</li>
+            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline">Service</li>
+            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline">Experience</li>
+            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline">Projects</li>
+            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline">Education</li>
+        </ul>
+        <div id="toggleBtn" class="lg:hidden">
+            <i id="menu-icon" class="fas fa-bars text-2xl text-center hover:cursor-pointer hover:text-orange-500 mt-auto"></i>
+        </div>
+        <div class="hidden lg:flex gap-5 items-center text-xl">
+            <i class="fa-brands fa-whatsapp hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i>
+            <i class="fa-solid fa-phone hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i>
+            <i class="fa-brands fa-github hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i>
+        </div>
+    </nav>
+    <div id="nav-menu" class="hidden bg-black/90 w-full mx-auto mt-0.5s shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <ul class="text-center py-1">
+            <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500">Portfolio</li>
+            <hr class="w-[90%] mx-auto text-black/30 h-2">
+            <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500">Service</li>
+            <hr class="w-[90%] mx-auto text-black/30 h-2">
+            <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500">Experience</li>
+            <hr class="w-[90%] mx-auto text-black/30 h-2">
+            <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500">Projects</li>
+            <hr class="w-[90%] mx-auto text-black/30 h-2">
+            <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500">Education</li>
+            <hr class="w-[90%] mx-auto text-black/30 h-2">
+            <li class="flex justify-center gap-4 py-2 ">
+                <i class="fa-brands fa-whatsapp hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 text-2xl"></i>
+                <i class="fa-solid fa-phone hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 text-2xl"></i>
+                <i class="fa-brands fa-github hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 text-2xl"></i>
+            </li>
+
+        </ul>
+    </div>
+
+    <section class="py-12 md:py-0 px-5 md:flex text-white bg-[url(../img/dark-web-backgrounds/dark-abstract-background_1048-1920.jpg)]">
+        <div class="text-center md:text-left md:w-[60%] md:mx-13 md:my-20 font-sans">
+            <h3 class="font-bold text-2xl">Hi</h3>
+            <h1 class="font-extrabold text-4xl">I'm <span class="text-orange-500">Mercy</span>,</h1>
+            <h1 class="font-extrabold text-3xl md:text-4xl">a Frontend Developer</h1>
+            <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente perferendis ab expedita, vitae aut repudiandae. Aliquam optio corporis suscipit molestiae placeat nihil, quis atque sapiente possimus minus distinctio esse reiciendis quo, dolore rem. Hic eos aut fugiat quae officia!</p>
+
+            <div class="flex justify-center md:justify-start gap-7 mt-8">
+                <button class="px-3 py-2 bg-black text-white border-2 border-orange-600 rounded-xl hover:cursor-pointer hover:translate-y-[-1px]">Hire Me</button>
+                <button class="px-2 py-2 bg-orange-600 text-white font-semibold border-2 border-black rounded-xl hover:cursor-pointer hover:translate-y-[-1px]">Experience</button>
+            </div>
+        </div>
+        <div class="flex w-full mt-10 md:w-[30%] lg:w-[45%] lg:mx-auto md:mr-13 justify-center md:my-auto">
+            <img class="size-96 md:size-60 lg:w-[70%] lg:h-[70%] lg:my-10 xl:w-[60%] rounded-full " src="../img/cv pic.jpg" alt="">
+        </div>
+    </section>
+
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
