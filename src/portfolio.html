@@ -6,65 +6,184 @@
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel = "stylesheet" href = "input.css">
+    <link rel="icon" type="image/png" href="../img/MERCY IFEDIORAH.png">
     <title>Document</title>
 </head>
 <body class="text-white">
-    <nav class="py-4 px-8 flex justify-between bg-black/90">
+    <nav class="sticky top-0 z-50 py-4 px-8 flex justify-between bg-black/90">
         <h1 class="font-sans uppercase font-extrabold text-lg hover:cursor-pointer"><span class="text-orange-500">Mercy</span>Ifediorah</h1>
         <ul class="hidden lg:flex font-sans gap-7 text-[15px] items-center font-semibold">
-            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline">Portfolio</li>
-            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline">Service</li>
-            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline">Experience</li>
-            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline">Projects</li>
-            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline">Education</li>
+            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline"><a href="#about">About</a></li>
+            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline"><a href="#projects">Projects</a></li>
+            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline"><a href="#Experience">Experience</a></li>
+            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline"><a href="#Education & skills">Education & Skills</a></li>
+            <li class="hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 hover:underline"><a href="#Contact Us">Contact Us</a></li>
         </ul>
         <div id="toggleBtn" class="lg:hidden">
             <i id="menu-icon" class="fas fa-bars text-2xl text-center hover:cursor-pointer hover:text-orange-500 mt-auto"></i>
         </div>
+        <div id="nav-menu" class="hidden absolute top-full left-0 w-full bg-black/90 shadow-lg z-[9999]">
+            <ul class="text-center py-1">
+                <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"><a href="#about">About</a></li>
+                <hr class="w-[90%] mx-auto text-black/30 h-2">
+                <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"><a href="#projects">Projects</a></li>
+                <hr class="w-[90%] mx-auto text-black/30 h-2">
+                <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"><a href="#Experience">Experience</a></li>
+                <hr class="w-[90%] mx-auto text-black/30 h-2">
+                <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"><a href="#Education & skills">Education & Skills</a></li>
+                <hr class="w-[90%] mx-auto text-black/30 h-2">
+                <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"><a href="#Contact Us">Contact Us</a></li>
+            </ul>
+        </div>
         <div class="hidden lg:flex gap-5 items-center text-xl">
-            <i class="fa-brands fa-whatsapp hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i>
-            <i class="fa-solid fa-phone hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i>
-            <i class="fa-brands fa-github hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i>
+            <a href="https://www.linkedin.com/in/mercy-ifediorah" target="_blank"><i class="fab fa-linkedin hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i></a>
+            <a href="https://github.com/Bheromaa-code" target="_blank"><i class="fa-brands fa-github hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i></a>
+            <a href="https://wa.me/+2349013519187" target="_blank"><i class="fa-brands fa-whatsapp hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i></a>
+            <a href="mailto:mercyifediorah35@gmail.com" target="_blank"><i class="fas fa-envelope hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i></a>
         </div>
     </nav>
-    <div id="nav-menu" class="hidden bg-black/90 w-full mx-auto mt-0.5s shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-        <ul class="text-center py-1">
-            <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500">Portfolio</li>
-            <hr class="w-[90%] mx-auto text-black/30 h-2">
-            <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500">Service</li>
-            <hr class="w-[90%] mx-auto text-black/30 h-2">
-            <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500">Experience</li>
-            <hr class="w-[90%] mx-auto text-black/30 h-2">
-            <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500">Projects</li>
-            <hr class="w-[90%] mx-auto text-black/30 h-2">
-            <li class="py-2 font-sans uppercase font-bold text-lg hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500">Education</li>
-            <hr class="w-[90%] mx-auto text-black/30 h-2">
-            <li class="flex justify-center gap-4 py-2 ">
-                <i class="fa-brands fa-whatsapp hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 text-2xl"></i>
-                <i class="fa-solid fa-phone hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 text-2xl"></i>
-                <i class="fa-brands fa-github hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500 text-2xl"></i>
-            </li>
+    
 
-        </ul>
-    </div>
-
-    <section class="py-12 md:py-0 px-5 md:flex text-white bg-[url(../img/dark-web-backgrounds/dark-abstract-background_1048-1920.jpg)]">
-        <div class="text-center md:text-left md:w-[60%] md:mx-13 md:my-20 font-sans">
+    <section id="about" class="py-12 md:py-0 px-5 md:flex text-white bg-[url(../img/dark-web-backgrounds/dark-abstract-background_1048-1920.jpg)]">
+        <div class="w-full lg:w-1/2 p-8 text-center flex flex-col justify-center">
             <h3 class="font-bold text-2xl">Hi</h3>
             <h1 class="font-extrabold text-4xl">I'm <span class="text-orange-500">Mercy</span>,</h1>
-            <h1 class="font-extrabold text-3xl md:text-4xl">a Frontend Developer</h1>
-            <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente perferendis ab expedita, vitae aut repudiandae. Aliquam optio corporis suscipit molestiae placeat nihil, quis atque sapiente possimus minus distinctio esse reiciendis quo, dolore rem. Hic eos aut fugiat quae officia!</p>
-
-            <div class="flex justify-center md:justify-start gap-7 mt-8">
-                <button class="px-3 py-2 bg-black text-white border-2 border-orange-600 rounded-xl hover:cursor-pointer hover:translate-y-[-1px]">Hire Me</button>
-                <button class="px-2 py-2 bg-orange-600 text-white font-semibold border-2 border-black rounded-xl hover:cursor-pointer hover:translate-y-[-1px]">Experience</button>
+            <h1 class="font-extrabold text-2xl md:text-2xl lg:text-4xl">a Fourth Year CSC Student</h1>
+            <p class="mt-4 font-sans italic font-semibold text-sm text-blue-100 md:text-base max-w-md mx-auto">Disciplined and result-oriented student at the University of Lagos with a <span class="font-bold text-orange-600">4.50 CGPA</span>. I specialize in building responsive frontend interfaces and managing technical projects using <span class="font-bold text-orange-600">Agile Scrum</span> methodologies.</p>
+            <div class="">
+                <button class="m-3 w-[60%] h-[6vh] text-white bg-orange-500 font-sans font-semibold rounded-full transition-all hover:translate-[-5px] hover:cursor-pointer shadow-sm"><a href="https://github.com/Bheromaa-code" target="_blank"><i class="fab fa-github"></i>Github</a></button>
+                <button class=" w-[60%] h-[6vh] text-orange-500 bg-white font-sans font-semibold rounded-full transition-all hover:translate-[-5px] hover:cursor-pointer shadow-sm"><a href="https://www.linkedin.com/in/mercy-ifediorah" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></button>
             </div>
         </div>
-        <div class="flex w-full mt-10 md:w-[30%] lg:w-[45%] lg:mx-auto md:mr-13 justify-center md:my-auto">
+        <div class="flex w-full mt-10 md:w-[50%] lg:w-[45%] lg:mx-auto md:mr-13 justify-center md:my-auto">
             <img class="size-96 md:size-60 lg:w-[70%] lg:h-[70%] lg:my-10 xl:w-[60%] rounded-full " src="../img/cv pic.jpg" alt="">
         </div>
     </section>
 
+    <section id="projects" class="bg-black/5 text-black py-20 px-6">
+
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-center mb-10">Technical Projects</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-5">
+                <div class="bg-white p-4 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-b-8 border-slate-100 transition-all hover:translate-y-[-5px] hover:cursor-pointer">
+                    <h3 class="font-sans font-extrabold text-lg  hover:underline"><a href="https://github.com/Bheromaa-code/EduLearn-Landing-Page" target="_blank">Edulearn LMS Landing Page</a></h3>
+                    <p class="mt-1 font-sans italic text-sm text-slate-400">A responsive landing page for a Learning Management System focusing on modern UI/UX and cross-browser performance.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-orange-50 text-orange-500 px-2 py-1 rounded text-xs font-semibold">Tailwind CSS</span>
+                        <span class="bg-orange-50 text-orange-500 px-2 py-1 rounded text-xs font-semibold">HTML5</span>
+                        <span class="bg-orange-50 text-orange-500 px-2 py-1 rounded text-xs font-semibold">Git</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-b-8 border-slate-100 transition-all hover:translate-y-[-5px] hover:cursor-pointer">
+                    <h3 class="font-sans font-extrabold text-lg  hover:underline"><a href="https://github.com/Bheromaa-code/Login-Page" target="_blank">Interactive Login Interface</a></h3>
+                    <p class="mt-1 font-sans italic text-sm text-slate-400">Designed and implemented a glassmorphism UI login page with vibrant gradient backgrounds and mobile responsiveness.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-orange-50 text-orange-500 px-2 py-1 rounded text-xs font-semibold">Tailwind CSS</span>
+                        <span class="bg-orange-50 text-orange-500 px-2 py-1 rounded text-xs font-semibold">UI Design</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-b-8 border-slate-100 transition-all hover:translate-y-[-5px] hover:cursor-pointer">
+                    <h3 class="font-sans font-extrabold text-lg  hover:underline"><a href="https://github.com/Bheromaa-code/Mini-Portfolio" target="_blank">Personal Developer Portfolio</a></h3>
+                    <p class="mt-1 font-sans italic text-sm text-slate-400">A high-performance dark-themed site featuring responsive navigation and smooth interactive elements built with JavaScript.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-orange-50 text-orange-500 px-2 py-1 rounded text-xs font-semibold">Tailwind CSS</span>
+                        <span class="bg-orange-50 text-orange-500 px-2 py-1 rounded text-xs font-semibold">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-b-8 border-slate-100 transition-all hover:translate-y-[-5px] hover:cursor-pointer">
+                    <h3 class="font-sans font-extrabold text-lg  hover:underline"><a href="https://github.com/Bheromaa-code/Navigation-bar" target="_blank">Reusable Navbar Component</a></h3>
+                    <p class="mt-1 font-sans italic text-sm text-slate-400">Engineered an accessible mobile menu with a functional hamburger toggle for seamless web navigation.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-orange-50 text-orange-500 px-2 py-1 rounded text-xs font-semibold">Tailwind CSS</span>
+                        <span class="bg-orange-50 text-orange-500 px-2 py-1 rounded text-xs font-semibold">JavaScript</span>
+                        <span class="bg-orange-50 text-orange-500 px-2 py-1 rounded text-xs font-semibold">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+    <section id="Experience" class="bg-white text-black py-20 px-6">
+
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-center mb-10">Experience</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-5">
+                <div class="bg-black/10 p-4 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all hover:translate-y-[-5px] ">
+                    <h3 class="font-sans font-extrabold text-lg text-orange-950">Project Lead | Agile Case Study: "EduLearn"</h3>
+                    <p class="mt-1 font-sans italic text-sm text-slate-400">12/2025 - Present</p>
+                    <ul class="space-y-2 mt-2 text-gray-700">
+                        <li class="text-sm font-semibold italic"><i class="fas fa-check-circle text-orange-500 mr-2"></i> Led the <span class="text-orange-950">Planning and Design</span> phase for a Learning management System (LMS) using <span class="text-orange-950">Agile Scrum</span></li>
+                        <li class="text-sm font-semibold italic"><i class="fas fa-check-circle text-orange-500 mr-2"></i> Orchestrated <span class="text-orange-950">2-week Sprints</span> and defined project milestones to ensure rapid delivery of the system blueprint</li>
+                        <li class="text-sm font-semibold italic"><i class="fas fa-check-circle text-orange-500 mr-2"></i> Synthesized initial project documentation, ensuring all <span class="text-orange-950">Functional Requirements</span> aligned with business goals</li>
+                        <li class="text-sm font-semibold italic"><i class="fas fa-check-circle text-orange-500 mr-2"></i> Facilitated team synchronizations to monitor progress and resolve "blockers," maintaining high team velocity</li>
+                    </ul>
+                </div>
+
+                <div class="bg-black/10 p-4 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all hover:translate-y-[-5px] ">
+                    <h3 class="font-sans font-extrabold text-lg text-orange-950 ">Systems Analyst & Project Secretary</h3>
+                    <p class="mt-1 font-sans italic text-sm text-slate-400">12/2024 – 03/2025</p>
+                    <ul class="space-y-2 mt-2 text-gray-700">
+                        <li class="text-sm font-semibold italic"><i class="fas fa-check-circle text-orange-500 mr-2"></i> Conducted a <span class="text-orange-950">Gap Analysis</span> for a local company to identify opportunities for technological transformation</li>
+                        <li class="text-sm font-semibold italic"><i class="fas fa-check-circle text-orange-500 mr-2"></i> Architected the <span class="text-orange-950">Analysis and Design phase</span> of a new system aimed at optimizing business workflows</li>
+                        <li class="text-sm font-semibold italic"><i class="fas fa-check-circle text-orange-500 mr-2"></i> Synthesized initial project documentation, ensuring all Managed detailed documentation and scheduling to maintain a "single source of truth" for the team</li>
+                        <li class="text-sm font-semibold italic"><i class="fas fa-check-circle text-orange-500 mr-2"></i> Successfully led the <span class="text-orange-950">Project Defence</span>, receiving commendations for subject matter expertise and presentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Education & skills" class="text-black py-20 px-6 max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold mb-12 text-center">Education and Skills</h3>
+        <div class="text-center grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="">
+                <div>
+                    <h5 class="font-bold text-lg mb-4 text-orange-950">Education</h5>
+                    <ul class="space-y-2 text-slate-400">
+                        <li> BSc. Computer Science</li>
+                        <li> University of Lagos</li>
+                        <li> 4.50 CGPA</li>
+                        <li> 2021 - Present</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold text-lg mb-4 text-orange-950">Frontend & Languages</h5>
+                <ul class="space-y-2 text-slate-400">
+                    <li> HTML5 & CSS3 (Advanced)</li>
+                    <li> Tailwind CSS</li>
+                    <li> JavaScript (ES6+)</li>
+                    <li> Foundational PHP</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-lg mb-4 text-orange-950">Professional Leadership</h5>
+                <ul class="space-y-2 text-slate-400">
+                    <li> Agile Scrum Facilitation</li>
+                    <li> Technical Documentation</li>
+                    <li> Team Synchronization</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="Contact Us" class="bg-black/90 text-white py-12 px-6 text-center">
+        <div class="flex justify-center gap-10 text-xl">
+            <a href="https://www.linkedin.com/in/mercy-ifediorah" target="_blank"><i class="fab fa-linkedin hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i></a>
+            <a href="https://github.com/Bheromaa-code" target="_blank"><i class="fa-brands fa-github hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i></a>
+            <a href="https://wa.me/+2349013519187" target="_blank"><i class="fa-brands fa-whatsapp hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i></a>
+            <a href="mailto:mercyifediorah35@gmail.com" target="_blank"><i class="fas fa-envelope hover:cursor-pointer hover:translate-y-[-1px] hover:text-orange-500"></i></a> 
+        </div>
+    </footer>
 
     <script src="portfolio.js"></script>
 </body>
